@@ -1,0 +1,4 @@
+Tiefensuche
+===========
+
+DurchlaufStrategie
