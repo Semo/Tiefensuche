@@ -5,6 +5,12 @@ import java.util.Collection;
 import java.util.Collections;
 import java.util.Comparator;
 
+/**
+ * 
+ * @author Sebastian Morkisch <semox78@gmail.com>
+ * @author Francois Dubois <siok@gmail.com>
+ */
+
 public class Tiefensuche {
 
     // Knoten nicht besucht
@@ -115,10 +121,10 @@ public class Tiefensuche {
         for (Edge<Vertex> edge : incidentEdges) {
             int neighbourId = edge.getVertexB().getId();
             if (v.getId() == pred[neighbourId]) {
-                return false;
+                return true;
             }
         }
-        return true;
+        return false;
     }
 
     public ArrayList<Vertex> topoDescSort() {
